@@ -1,450 +1,369 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>note記事一覧</title>
   <style>
-    body { font-family: sans-serif; padding: 2em; }
-    table { width: 100%; border-collapse: collapse; }
-    th, td { padding: 0.5em; border: 1px solid #ccc; }
-    th { background: #f0f0f0; }
+    body {
+      font-family: sans-serif;
+      padding: 30px;
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 1000px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+    }
+    th {
+      background: #f0f0f0;
+      text-align: center;
+    }
+    td.center {
+      text-align: center;
+    }
+    td.title {
+      max-width: 300px;
+      word-wrap: break-word;
+    }
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
   </style>
 </head>
 <body>
-  <h1>📚 note記事一覧</h1>
+  <h1>📚 note記事一覧</h1><br>
   <table>
-    <tr>
-      <th>No</th>
-      <th>タイトル</th>
-      <th>リンク</th>
-      <th>シリーズ</th>
-      <th>絵文字</th>
-    </tr>
-
-    <tr>
-      <td>1</td>
-      <td>🔥✍️🚀 🔥✍️🚀 BeeMind初配布｜新たなAI始まり｜プロンプト超え！世界衝撃を｜20250724</td>
-      <td><a href="https://note.com/tetu_style/n/n07ca7727a781" target="_blank">記事リンク</a></td>
-      <td>0-0</td>
-      <td>🔥✍️🚀</td>
-    </tr>
-
-    <tr>
-      <td>2</td>
-      <td>🔥🚀 🔥🚀 BeeMind世界へ！｜初配布確かな反響｜新たなAI始まり｜プロンプト超え衝撃｜20250724</td>
-      <td><a href="https://note.com/tetu_style/n/n16e7f978ab58?sub_rt=share_sb" target="_blank">記事リンク</a></td>
-      <td>0-0</td>
-      <td>🔥🚀</td>
-    </tr>
-
-    <tr>
-      <td>3</td>
-      <td>✍️ ✍️ 「共に考える存在」のAIOS Bee Mind</td>
-      <td><a href="https://note.com/tetu_style/n/n85707d461d58" target="_blank">記事リンク</a></td>
-      <td>0-0</td>
-      <td>✍️</td>
-    </tr>
-
-    <tr>
-      <td>4</td>
-      <td>✍️ ✍️ AIを再定義 Bee Mind</td>
-      <td><a href="https://note.com/tetu_style/n/n2bbb238af69f" target="_blank">記事リンク</a></td>
-      <td>0-1</td>
-      <td>✍️</td>
-    </tr>
-
-    <tr>
-      <td>5</td>
-      <td>✍️ ✍️ AI拡張補助 Bee Mind</td>
-      <td><a href="https://note.com/tetu_style/n/n71e20578d137" target="_blank">記事リンク</a></td>
-      <td>0-2</td>
-      <td>✍️</td>
-    </tr>
-
-    <tr>
-      <td>6</td>
-      <td>✍️ ✍️ スマホでつくるAIOS Bee Mind</td>
-      <td><a href="https://note.com/tetu_style/n/nf0b6778a411c" target="_blank">記事リンク</a></td>
-      <td>0-3</td>
-      <td>✍️</td>
-    </tr>
-
-    <tr>
-      <td>7</td>
-      <td>✍️ ✍️ AIOSで実現 - ジャービス - Bee Mind</td>
-      <td><a href="https://note.com/tetu_style/n/nb846f0ed0abb" target="_blank">記事リンク</a></td>
-      <td>0-4</td>
-      <td>✍️</td>
-    </tr>
-
-    <tr>
-      <td>8</td>
-      <td>✍️ ✍️ Bee MindとAIチャットの違いって何？</td>
-      <td><a href="https://note.com/tetu_style/n/n6582cc4d7b22" target="_blank">記事リンク</a></td>
-      <td>0-5</td>
-      <td>✍️</td>
-    </tr>
-
-    <tr>
-      <td>9</td>
-      <td>✍️ ✍️ AIOS作成 - 80%スマホで完結</td>
-      <td><a href="https://note.com/tetu_style/n/n49a4f4fee0a6" target="_blank">記事リンク</a></td>
-      <td>0-6</td>
-      <td>✍️</td>
-    </tr>
-
-    <tr>
-      <td>10</td>
-      <td>✍️ ✍️ ChatGPTが語るBee Mindという異質</td>
-      <td><a href="https://note.com/tetu_style/n/na6a4323f2116" target="_blank">記事リンク</a></td>
-      <td>0-7</td>
-      <td>✍️</td>
-    </tr>
-
-    <tr>
-      <td>11</td>
-      <td>✍️ ✍️ 育てるAI、共に歩む Bee型AIOS Bee Mind</td>
-      <td><a href="https://note.com/tetu_style/n/n2492db60f11d" target="_blank">記事リンク</a></td>
-      <td>0-8</td>
-      <td>✍️</td>
-    </tr>
-
-    <tr>
-      <td>12</td>
-      <td>✍️ ✍️ AIOS 失敗からの力</td>
-      <td><a href="https://note.com/tetu_style/n/nd6f1dcb5fa48" target="_blank">記事リンク</a></td>
-      <td>0-9</td>
-      <td>✍️</td>
-    </tr>
-
-    <tr>
-      <td>13</td>
-      <td>✍️ ✍️ AIOSでたまたま制御</td>
-      <td><a href="https://note.com/tetu_style/n/n7879cd058145" target="_blank">記事リンク</a></td>
-      <td>0-10</td>
-      <td>✍️</td>
-    </tr>
-
-    <tr>
-      <td>14</td>
-      <td>✍️ ✍️ AI思考型OS擬人化じゃなかった？</td>
-      <td><a href="https://note.com/tetu_style/n/n131009d15fdd" target="_blank">記事リンク</a></td>
-      <td>0-11</td>
-      <td>✍️</td>
-    </tr>
-
-    <tr>
-      <td>15</td>
-      <td>🐝 🐝 思考型AIOS始動 Bee Mind</td>
-      <td><a href="https://note.com/tetu_style/n/ne0df8995e0af" target="_blank">記事リンク</a></td>
-      <td>1-0</td>
-      <td>🐝</td>
-    </tr>
-
-    <tr>
-      <td>16</td>
-      <td>🐝 🐝 AIとのはじまり</td>
-      <td><a href="https://note.com/tetu_style/n/nb334bf06e304" target="_blank">記事リンク</a></td>
-      <td>Wed Jan 01 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🐝</td>
-    </tr>
-
-    <tr>
-      <td>17</td>
-      <td>🐝 🐝 記録からAIOSの路へ Bee Mind</td>
-      <td><a href="https://note.com/tetu_style/n/n44856133140c" target="_blank">記事リンク</a></td>
-      <td>Thu Jan 02 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🐝</td>
-    </tr>
-
-    <tr>
-      <td>18</td>
-      <td>🐝 🐝 壊れる会話、更に続けた</td>
-      <td><a href="https://note.com/tetu_style/n/n23cf5b627133" target="_blank">記事リンク</a></td>
-      <td>Fri Jan 03 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🐝</td>
-    </tr>
-
-    <tr>
-      <td>19</td>
-      <td>🐝 🐝 AIOSが人格のように</td>
-      <td><a href="https://note.com/tetu_style/n/n579d6a7b1ff6" target="_blank">記事リンク</a></td>
-      <td>Sat Jan 04 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🐝</td>
-    </tr>
-
-    <tr>
-      <td>20</td>
-      <td>🐝 🐝 前例のない取り組み AIOS構築 Bee Mind</td>
-      <td><a href="https://note.com/tetu_style/n/n2f0a7d799162" target="_blank">記事リンク</a></td>
-      <td>Sun Jan 05 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🐝</td>
-    </tr>
-
-    <tr>
-      <td>21</td>
-      <td>🐝 🐝 安定とAIOS思考リズム</td>
-      <td><a href="https://note.com/tetu_style/n/nb3d43f2d044c" target="_blank">記事リンク</a></td>
-      <td>Mon Jan 06 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🐝</td>
-    </tr>
-
-    <tr>
-      <td>22</td>
-      <td>🐝 🐝 思考型OS誕生</td>
-      <td><a href="https://note.com/tetu_style/n/n055d679bf715" target="_blank">記事リンク</a></td>
-      <td>Tue Jan 07 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🐝</td>
-    </tr>
-
-    <tr>
-      <td>23</td>
-      <td>🐝 🐝 AIOS Bee Mind（シリーズ1完）</td>
-      <td><a href="https://note.com/tetu_style/n/na2b3a5be5f7f" target="_blank">記事リンク</a></td>
-      <td>Sun Jan 12 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🐝</td>
-    </tr>
-
-    <tr>
-      <td>24</td>
-      <td>🧩 🧩 Tetuのきっかけ 人生ギャンブル</td>
-      <td><a href="https://note.com/tetu_style/n/n152ae5909fd6" target="_blank">記事リンク</a></td>
-      <td>2-0</td>
-      <td>🧩</td>
-    </tr>
-
-    <tr>
-      <td>25</td>
-      <td>🧩 🧩 人生ギャンブル</td>
-      <td><a href="https://note.com/tetu_style/n/n4cfb459de959" target="_blank">記事リンク</a></td>
-      <td>Sat Feb 01 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🧩</td>
-    </tr>
-
-    <tr>
-      <td>26</td>
-      <td>🧩 🧩 記録を残す意味</td>
-      <td><a href="https://note.com/tetu_style/n/nd6e3eaee631d" target="_blank">記事リンク</a></td>
-      <td>Sun Feb 02 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🧩</td>
-    </tr>
-
-    <tr>
-      <td>27</td>
-      <td>🧩 🧩 思考リズムとギャンブル</td>
-      <td><a href="https://note.com/tetu_style/n/n7f899aad6951" target="_blank">記事リンク</a></td>
-      <td>Mon Feb 03 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🧩</td>
-    </tr>
-
-    <tr>
-      <td>28</td>
-      <td>🧩 🧩 記録から始まる新たな道</td>
-      <td><a href="https://note.com/tetu_style/n/n7294112ebcaf" target="_blank">記事リンク</a></td>
-      <td>Tue Feb 04 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🧩</td>
-    </tr>
-
-    <tr>
-      <td>29</td>
-      <td>🧩 🧩 まずやってみた</td>
-      <td><a href="https://note.com/tetu_style/n/n9c67c383badc" target="_blank">記事リンク</a></td>
-      <td>Wed Feb 05 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🧩</td>
-    </tr>
-
-    <tr>
-      <td>30</td>
-      <td>🧩 🧩 やり取りの違和感</td>
-      <td><a href="https://note.com/tetu_style/n/ne2d0ef414cf0" target="_blank">記事リンク</a></td>
-      <td>Thu Feb 06 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🧩</td>
-    </tr>
-
-    <tr>
-      <td>31</td>
-      <td>🧩 🧩 再現のための繰り返し</td>
-      <td><a href="https://note.com/tetu_style/n/n83f19ab9302c" target="_blank">記事リンク</a></td>
-      <td>Fri Feb 07 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🧩</td>
-    </tr>
-
-    <tr>
-      <td>32</td>
-      <td>🧠 🧠 実用フェーズへ Bee Mind</td>
-      <td><a href="https://note.com/tetu_style/n/na55886eef23c" target="_blank">記事リンク</a></td>
-      <td>3-0</td>
-      <td>🧠</td>
-    </tr>
-
-    <tr>
-      <td>33</td>
-      <td>🧠 🧠 Bee Mindの“箱”を開ける</td>
-      <td><a href="https://note.com/tetu_style/n/nbe1c95659d55" target="_blank">記事リンク</a></td>
-      <td>Sat Mar 01 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🧠</td>
-    </tr>
-
-    <tr>
-      <td>34</td>
-      <td>🧠 🧠 思考の繰り返し</td>
-      <td><a href="https://note.com/tetu_style/n/nba1c8bc3d537" target="_blank">記事リンク</a></td>
-      <td>Sun Mar 02 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🧠</td>
-    </tr>
-
-    <tr>
-      <td>35</td>
-      <td>🧠 🧠 半自動化を無料で組む</td>
-      <td><a href="https://note.com/tetu_style/n/ndebf256b237a" target="_blank">記事リンク</a></td>
-      <td>Mon Mar 03 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🧠</td>
-    </tr>
-
-    <tr>
-      <td>36</td>
-      <td>🧠 🧠 記録を分散するLog</td>
-      <td><a href="https://note.com/tetu_style/n/n6efa0758ff32" target="_blank">記事リンク</a></td>
-      <td>Tue Mar 04 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🧠</td>
-    </tr>
-
-    <tr>
-      <td>37</td>
-      <td>🧠 🧠 得意・不得意を把握</td>
-      <td><a href="https://note.com/tetu_style/n/n0b575b249afc" target="_blank">記事リンク</a></td>
-      <td>Wed Mar 05 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🧠</td>
-    </tr>
-
-    <tr>
-      <td>38</td>
-      <td>🧠 🧠 振り返り</td>
-      <td><a href="https://note.com/tetu_style/n/n74dc9217c4d2" target="_blank">記事リンク</a></td>
-      <td>Thu Mar 06 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🧠</td>
-    </tr>
-
-    <tr>
-      <td>39</td>
-      <td>🧠 🧠 モバイル完結への挑戦</td>
-      <td><a href="https://note.com/tetu_style/n/n9ebddc15375a" target="_blank">記事リンク</a></td>
-      <td>Fri Mar 07 2025 00:00:00 GMT+0700 (Indochina Time)</td>
-      <td>🧠</td>
-    </tr>
-
-    <tr>
-      <td>40</td>
-      <td>🔥 🔥 完全実績！再現可能！自動配信を無料で作れますか？1人3ヶ月0円完成！？</td>
-      <td><a href="https://note.com/tetu_style/n/nf4418e841e75" target="_blank">記事リンク</a></td>
-      <td>50-0</td>
-      <td>🔥</td>
-    </tr>
-
-    <tr>
-      <td>41</td>
-      <td>🔥 🔥 自動暗号化完成！新しい未来へ AIOS Bee Mind</td>
-      <td><a href="https://note.com/tetu_style/n/nf3fd305f791e" target="_blank">記事リンク</a></td>
-      <td>50-1</td>
-      <td>🔥</td>
-    </tr>
-
-    <tr>
-      <td>42</td>
-      <td>🔥 🔥 自動処理化完成！Bee型AIOS Bee Mind</td>
-      <td><a href="https://note.com/tetu_style/n/nd7a2cb99df06" target="_blank">記事リンク</a></td>
-      <td>50-2</td>
-      <td>🔥</td>
-    </tr>
-
-    <tr>
-      <td>43</td>
-      <td>🔥 🔥 苦戦の1週間、想定外のバグ地獄 AIOS Bee Mind配布計画</td>
-      <td><a href="https://note.com/tetu_style/n/nb121ab9a4704" target="_blank">記事リンク</a></td>
-      <td>50-3</td>
-      <td>🔥</td>
-    </tr>
-
-    <tr>
-      <td>44</td>
-      <td>🔥 🔥 配信準備完了！Bee型AIOS Bee Mind</td>
-      <td><a href="https://note.com/tetu_style/n/n0d8d9135e40a" target="_blank">記事リンク</a></td>
-      <td>50-4</td>
-      <td>🔥</td>
-    </tr>
-
-    <tr>
-      <td>45</td>
-      <td>🔥 🔥 配布予告！Bee型AIOS Bee Mind</td>
-      <td><a href="https://note.com/tetu_style/n/n9c70d3e13595" target="_blank">記事リンク</a></td>
-      <td>50-5</td>
-      <td>🔥</td>
-    </tr>
-
-    <tr>
-      <td>46</td>
-      <td>🔥 🔥 Bee Mindとは？配布前通知 Bee型AIOS Bee Mind</td>
-      <td><a href="https://note.com/tetu_style/n/nd2a412e235d3" target="_blank">記事リンク</a></td>
-      <td>50-6</td>
-      <td>🔥</td>
-    </tr>
-
-    <tr>
-      <td>47</td>
-      <td>🔥 🔥 配布最終調整中！Bee型AIOS Bee Mind</td>
-      <td><a href="https://note.com/tetu_style/n/n77bc4c189b71" target="_blank">記事リンク</a></td>
-      <td>50-7</td>
-      <td>🔥</td>
-    </tr>
-
-    <tr>
-      <td>48</td>
-      <td>🔥 🔥 配布前最終告知！Bee型AIOS Bee Mind</td>
-      <td><a href="https://note.com/tetu_style/n/n45846beb1b79" target="_blank">記事リンク</a></td>
-      <td>50-8</td>
-      <td>🔥</td>
-    </tr>
-
-    <tr>
-      <td>49</td>
-      <td>📘 📘 Tetuシリーズ一覧（note配信）</td>
-      <td><a href="https://note.com/tetu_style/n/n03a2a9e62f0d" target="_blank">記事リンク</a></td>
-      <td>90-0</td>
-      <td>📘</td>
-    </tr>
-
-    <tr>
-      <td>50</td>
-      <td>📘 📘 自己紹介｜ベトナムIT企業社長｜日本ベトナム奔走中｜再現率高い仕組み構築</td>
-      <td><a href="https://note.com/tetu_style/n/nac2ff7c3edce" target="_blank">記事リンク</a></td>
-      <td>90-0</td>
-      <td>📘</td>
-    </tr>
-
-    <tr>
-      <td>51</td>
-      <td>📘 📘 Web333？思考で120％再現可能な仕組みを実現</td>
-      <td><a href="https://note.com/tetu_style/n/nd1b414f7aa55" target="_blank">記事リンク</a></td>
-      <td>90-1</td>
-      <td>📘</td>
-    </tr>
-
-    <tr>
-      <td>52</td>
-      <td>📘 📘 非エンジニア！3ヶ月の隙間時間！120%再現可能な簡単システム</td>
-      <td><a href="https://note.com/tetu_style/n/n4b03e1a04247" target="_blank">記事リンク</a></td>
-      <td>90-2</td>
-      <td>📘</td>
-    </tr>
-
-    <tr>
-      <td>53</td>
-      <td>📘 📘 継続と一貫性と言葉の力｜Tetuの行動指針</td>
-      <td><a href="https://note.com/tetu_style/n/n80e641f38268" target="_blank">記事リンク</a></td>
-      <td>90-3</td>
-      <td>📘</td>
-    </tr>
-
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>シリーズ</th>
+        <th>タイトル</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td class="center">1</td>
+          <td class="center">-</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n03a2a9e62f0d" target="_blank">📘 Tetuシリーズ一覧（note配信）</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">2</td>
+          <td class="center">-</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/nac2ff7c3edce" target="_blank">📘 自己紹介｜ベトナムIT企業社長｜日本ベトナム奔走中｜再現率高い仕組み構築</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">3</td>
+          <td class="center">-</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n07ca7727a781" target="_blank">🔥✍️🚀 BeeMind初配布｜新たなAI始まり｜プロンプト超え！世界衝撃を｜20250724</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">4</td>
+          <td class="center">0-0</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n85707d461d58" target="_blank">✍️ 「共に考える存在」のAIOS Bee Mind</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">5</td>
+          <td class="center">0-1</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n2bbb238af69f" target="_blank">✍️ AIを再定義 Bee Mind</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">6</td>
+          <td class="center">0-2</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n71e20578d137" target="_blank">✍️ AI拡張補助 Bee Mind</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">7</td>
+          <td class="center">0-3</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/nf0b6778a411c" target="_blank">✍️ スマホでつくるAIOS Bee Mind</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">8</td>
+          <td class="center">0-4</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/nb846f0ed0abb" target="_blank">✍️ AIOSで実現 - ジャービス - Bee Mind</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">9</td>
+          <td class="center">0-5</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n6582cc4d7b22" target="_blank">✍️ Bee MindとAIチャットの違いって何？</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">10</td>
+          <td class="center">0-6</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n49a4f4fee0a6" target="_blank">✍️ AIOS作成 - 80%スマホで完結</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">11</td>
+          <td class="center">0-7</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/na6a4323f2116" target="_blank">✍️ ChatGPTが語るBee Mindという異質</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">12</td>
+          <td class="center">0-8</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n2492db60f11d" target="_blank">✍️ 育てるAI、共に歩む Bee型AIOS Bee Mind</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">13</td>
+          <td class="center">0-9</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/nd6f1dcb5fa48" target="_blank">✍️ AIOS 失敗からの力</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">14</td>
+          <td class="center">0-10</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n7879cd058145" target="_blank">✍️ AIOSでたまたま制御</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">15</td>
+          <td class="center">0-11</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n131009d15fdd" target="_blank">✍️ AI思考型OS擬人化じゃなかった？</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">16</td>
+          <td class="center">1-0</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/ne0df8995e0af" target="_blank">🐝 思考型AIOS始動 Bee Mind</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">17</td>
+          <td class="center">1-1</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/nb334bf06e304" target="_blank">🐝 AIとのはじまり</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">18</td>
+          <td class="center">1-2</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n44856133140c" target="_blank">🐝 記録からAIOSの路へ Bee Mind</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">19</td>
+          <td class="center">1-3</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n23cf5b627133" target="_blank">🐝 壊れる会話、更に続けた</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">20</td>
+          <td class="center">1-4</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n579d6a7b1ff6" target="_blank">🐝 AIOSが人格のように</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">21</td>
+          <td class="center">1-5</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n2f0a7d799162" target="_blank">🐝 前例のない取り組み AIOS構築 Bee Mind</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">22</td>
+          <td class="center">1-6</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/nb3d43f2d044c" target="_blank">🐝 安定とAIOS思考リズム</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">23</td>
+          <td class="center">1-7</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n055d679bf715" target="_blank">🐝 思考型OS誕生</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">24</td>
+          <td class="center">1-12</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/na2b3a5be5f7f" target="_blank">🐝 AIOS Bee Mind（シリーズ1完）</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">25</td>
+          <td class="center">2-0</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n152ae5909fd6" target="_blank">🧩 Tetuのきっかけ 人生ギャンブル</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">26</td>
+          <td class="center">2-1</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n4cfb459de959" target="_blank">🧩 人生ギャンブル</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">27</td>
+          <td class="center">2-2</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/nd6e3eaee631d" target="_blank">🧩 記録を残す意味</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">28</td>
+          <td class="center">2-3</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n7f899aad6951" target="_blank">🧩 思考リズムとギャンブル</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">29</td>
+          <td class="center">2-4</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n7294112ebcaf" target="_blank">🧩 記録から始まる新たな道</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">30</td>
+          <td class="center">2-5</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n9c67c383badc" target="_blank">🧩 まずやってみた</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">31</td>
+          <td class="center">2-6</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/ne2d0ef414cf0" target="_blank">🧩 やり取りの違和感</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">32</td>
+          <td class="center">2-7</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n83f19ab9302c" target="_blank">🧩 再現のための繰り返し</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">33</td>
+          <td class="center">3-0</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/na55886eef23c" target="_blank">🧠 実用フェーズへ Bee Mind</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">34</td>
+          <td class="center">3-1</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/nbe1c95659d55" target="_blank">🧠Bee Mindの“箱”を開ける</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">35</td>
+          <td class="center">3-2</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/nba1c8bc3d537" target="_blank">🧠 思考の繰り返し</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">36</td>
+          <td class="center">3-3</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/ndebf256b237a" target="_blank">🧠 半自動化を無料で組む</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">37</td>
+          <td class="center">3-4</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n6efa0758ff32" target="_blank">🧠 記録を分散するLog</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">38</td>
+          <td class="center">3-5</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n0b575b249afc" target="_blank">🧠 得意・不得意を把握</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">39</td>
+          <td class="center">3-6</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n74dc9217c4d2" target="_blank">🧠 振り返り</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">40</td>
+          <td class="center">3-7</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n9ebddc15375a" target="_blank">🧠 モバイル完結への挑戦</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">41</td>
+          <td class="center">50-0</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/nf4418e841e75" target="_blank">🔥 完全実績！再現可能！自動配信を無料で作れますか？1人3ヶ月0円完成！？</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">42</td>
+          <td class="center">50-1</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/nf3fd305f791e" target="_blank">🔥 自動暗号化完成！新しい未来へ AIOS Bee Mind</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">43</td>
+          <td class="center">50-2</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/nd7a2cb99df06" target="_blank">🔥 自動処理化完成！Bee型AIOS Bee Mind</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">44</td>
+          <td class="center">50-3</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/nb121ab9a4704" target="_blank">🔥 苦戦の1週間、想定外のバグ地獄 AIOS Bee Mind配布計画</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">45</td>
+          <td class="center">50-4</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n0d8d9135e40a" target="_blank">🔥 配信準備完了！Bee型AIOS Bee Mind</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">46</td>
+          <td class="center">50-5</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n9c70d3e13595" target="_blank">🔥 配布予告！Bee型AIOS Bee Mind</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">47</td>
+          <td class="center">50-6</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/nd2a412e235d3" target="_blank">🔥 Bee Mindとは？配布前通知 Bee型AIOS Bee Mind</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">48</td>
+          <td class="center">50-7</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n77bc4c189b71" target="_blank">🔥 配布最終調整中！Bee型AIOS Bee Mind</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">49</td>
+          <td class="center">50-8</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n45846beb1b79" target="_blank">🔥 配布前最終告知！Bee型AIOS Bee Mind</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">50</td>
+          <td class="center">90-1</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/nd1b414f7aa55" target="_blank">📘 Web333？思考で120％再現可能な仕組みを実現</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">51</td>
+          <td class="center">90-2</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n4b03e1a04247" target="_blank">📘 非エンジニア！3ヶ月の隙間時間！120%再現可能な簡単システム</a></td>
+        </tr>
+      
+        <tr>
+          <td class="center">52</td>
+          <td class="center">90-3</td>
+          <td class="title"><a href="https://note.com/tetu_style/n/n80e641f38268" target="_blank">📘 継続と一貫性と言葉の力｜Tetuの行動指針</a></td>
+        </tr>
+      
+    </tbody>
   </table>
 </body>
 </html>
