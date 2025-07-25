@@ -32,14 +32,22 @@
       border-collapse: collapse;
       width: 100%;
       table-layout: fixed;
-      max-width: 1000px;
+      border-collapse: collapse;
       background: white;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     th, td {
-      border: 1px solid #ccc;
-      padding: 8px 12px;
+      padding: 8px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    /* 🔒 No列だけ幅を固定 */
+    th:nth-child(1), td:nth-child(1) {
+      width: 40px;
+      min-width: 40px;
+      max-width: 40px;
     }
 
     th {
