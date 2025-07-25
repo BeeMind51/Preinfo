@@ -6,95 +6,99 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>note記事一覧</title>
-  <style>
+<style>
+  body {
+    font-family: sans-serif;
+    padding: 5%;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .table-container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 10px;
+    max-height: 70vh;
+    min-height: 400px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: white;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+
+  th:nth-child(1), td:nth-child(1) {
+    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
+  }
+
+  th {
+    background: #f0f0f0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  td.center {
+    text-align: center;
+  }
+
+  td.no {
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  td.title {
+    max-width: 300px;
+    word-wrap: break-word;
+  }
+
+  tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+
+  /* ✅ スマホ対応 */
+  @media screen and (max-width: 600px) {
     body {
-      font-family: sans-serif;
-      padding: 5%;
-      background-color: #f9f9f9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0;
-    }
-
-    .table-container {
-      width: 100%;
-      max-width: 1000px;
-      padding: 0 10px; /* スマホや小画面でも見やすく */
-      max-height: 600px; /* ヘッダー固定を有効にするための高さ */
-      box-sizing: border-box;
-      overflow-y: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      background: white;
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      table-layout: fixed;
-      border-collapse: collapse;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    th, td {
-      padding: 8px;
-      text-align: left;
-      border: 1px solid #ddd;
-    }
-
-    /* 🔒 No列だけ幅を固定 */
-    th:nth-child(1), td:nth-child(1) {
-      width: 40px;
-      min-width: 40px;
-      max-width: 40px;
-    }
-
-    th {
-      background: #f0f0f0;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1;
-    }
-
-    td.center {
-      text-align: center;
-    }
-
-    td.no {
-      white-space: nowrap;
-      font-weight: bold;
+      padding: 2%;
     }
 
     td.title {
-      max-width: 300px;
-      word-wrap: break-word;
+      max-width: none;
+      word-break: break-word;
     }
 
-    tr:nth-child(even) {
-      background-color: #fafafa;
+    td.no {
+      font-size: 1rem;
     }
 
-    @media screen and (max-width: 600px) {
-      body {
-        padding: 2%;
-      }
-
-      td.title {
-        max-width: none;
-        word-break: break-word;
-      }
-
-      td.no {
-        font-size: 1rem;
-      }
-
-      a {
-        font-size: 1rem;
-      }
+    a {
+      font-size: 1rem;
     }
-  </style>
+
+    .table-container {
+      max-height: 80vh;
+    }
+  }
+</style>
 </head>
 <body>
   <h1>📚 note記事一覧</h1><br>
