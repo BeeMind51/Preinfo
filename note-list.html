@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -19,7 +20,9 @@
     .table-container {
       width: 100%;
       max-width: 1000px;
+      padding: 0 10px; /* スマホや小画面でも見やすく */
       max-height: 600px; /* ヘッダー固定を有効にするための高さ */
+      box-sizing: border-box;
       overflow-y: auto;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       background: white;
@@ -28,6 +31,7 @@
     table {
       border-collapse: collapse;
       width: 100%;
+      table-layout: fixed;
       max-width: 1000px;
       background: white;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
